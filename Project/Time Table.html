@@ -1,0 +1,23 @@
+<?php
+	session_start();
+	
+	$fid=$_SESSION['fid'];
+
+	if(!isset($fid))
+	{
+		header('location:Index.php');
+	}
+	else{
+
+<html>
+	<head>
+
+	</head>
+	<body>
+	<table></table>
+	</body>
+</html>
+<?php
+	}
+?>
+

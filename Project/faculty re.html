@@ -1,0 +1,188 @@
+<html>
+<head>
+	<style>
+		 body{
+          			  margin: 0px;
+         			  padding: 0px;
+				height:100%;
+				width:100%;
+                background-image: url('sirbptiimg.jpg');
+               background-size: 100% 100%;
+		background-repeat:no-repeat;
+              
+        }
+		 	
+		#mainw{
+			 height: 100px;
+                        width: 500px;
+                        border-right: 1px solid #7575a3;
+                        border-left: 1px solid #7575a3;
+                        border-top: 1px solid #7575a3;
+                
+                        font-family: verdana;
+                        position: absolute;
+                        top:130px;
+                        left:0;
+                        right:0;
+                        bottom: 0;
+                        background-color: #5E35B1;
+                        margin: 0 auto;
+                                          //    opacity: 0.9;
+                         box-shadow: 0px 0px 10px 2px #444;
+                    //background: linear-gradient(135deg,#E1BEE7 40%,#C5CAE9 100%);  
+                        color:white;
+                       // color:darkslateblue
+            		}
+        
+        #sname,#fname,#uemail,#mobile,#upass,#cpass{
+            height: 30px;
+            width: 200px;
+            
+        }
+        #uaddress{
+            height: 50px;
+            width: 200px;
+            resize: none;
+        }
+	#status{
+		 height: 30px;
+            width: 200px;
+	}
+        #btn{
+            height: 30px;
+            width: 100px;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+            background-color:black;
+            position: absolute;
+            opacity: 0.7;
+            z-index: 1;
+        }
+	#rbtn{
+		height:30px;
+		width:100px;
+		background-color:#7575a3;
+		border-radius:30px;
+		text-align:center;
+		line-height:30px;
+				position:absolute;
+				top:10;
+				right:50;
+				text-decoration:none;
+				color:white;
+				font-family:verdana;
+				font-size:15px;
+			}
+	</style>
+</head>
+	<body>
+     	<a id="rbtn" href="Index.php">LOGIN</a>
+        <center><img src="logo.gif" height="100px" width="100px"/></center>
+		<table border="0"align="center" id="mainw" cellspacing="10">
+		<form action="registration.php" method="post" enctype="multipart/form-data">
+		  <div id="menu">
+			<tr>
+                    <td colspan="2">
+                      <center>  
+                          <font size="4"><b><u>Faculty Registration Form</u></b></font></center>
+                         </td>
+            
+                    </tr>
+		<tr>
+		      <td>
+			Enter your surname:
+            </td>
+            <td>
+                  <input type="text" name="Surname" id="sname"><br>
+		     </td>
+		</tr>
+			<tr>
+			<td>
+			Enter your name:
+                </td>
+            <td>
+            <input type="text" name="fname" id="fname"><br>
+			</td>	
+			</tr>
+              <tr>
+                <td>
+                    Enter Address:  
+                </td>
+                <td>
+                    <textarea id="uaddress" name="uaddress"></textarea>  
+                </td>
+                
+              </tr>
+		<tr>
+                <td>
+                    Select Status:  
+                </td>
+                <td>
+                    <select id="status" name="status">
+			<option>Faculty</option>
+			<option>Visting Faculty</option>
+		</select>
+                </td>
+                
+              </tr>
+			<tr>
+                <td>
+                    Gender :
+                </td>
+				<td>
+					Male<input type="radio" name="msg" id="yes"/>
+					Female<input type="radio" name="msg" id="no"/>
+			</tr>
+              <tr>
+                    <td>
+                        Enter Email:
+                  </td>
+                  <td>
+                    <input type="email" name="uemail" id="uemail" required/>
+                  </td>
+                    
+              </tr>
+              <tr>
+                <td>
+                    Enter Password:  
+                </td>
+                <td><input type="password" name="upass" id="upass" required/></td>
+              </tr>
+              <tr>
+                <td>
+                    Confirm Password:  
+                </td>
+                <td><input type="password" name="cpass" id="cpass" required/></td>
+              </tr>
+			<tr>
+				<td>
+                    Mobile No.</td>
+                
+                <td>
+                    <input type="text" name="mobile" maxlength="10" id="mobile"><br>
+				</td>
+			</tr>
+			<tr>
+                <td>
+                    Upload Photo :
+                </td>  
+                <td>
+                    <input type="file" name="fn"/>
+                </td>
+            </tr>
+              <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="OK" id="btn"/>  
+                </td>
+              
+              </tr>
+		    </div>
+		</form>
+		</table>
+	</body>
+</html>
